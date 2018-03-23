@@ -1,0 +1,71 @@
+.fade-enter, .fade-appear {
+  opacity: 0.01;
+}
+.fade-enter.fade-enter-active, .fade-appear, .fade-appear-active {
+  opacity: 1;
+  transition: all 300ms ease-in;
+}
+.fade-leave {
+  opacity: 1;
+}
+.fade-leave.fade-leave-active {
+  opacity: 0.01;
+  transition: all 5ms ease-in;
+}
+
+.App {
+  font-family: 'Mercury SSm A', 'Mercury Text G2', serif;
+}
+
+.App form input[type=text] {
+  border: 0;
+  border-bottom: 1px solid #aaa;
+  display: block;
+  width: 90%;
+  padding: 0.6em;
+  font-family: 'Mercury SSm A', 'Mercury Text G2', serif;
+  outline: none;
+  margin: 1em 0;
+}
+.App form input[type=text]:focus {
+  background: #eee;
+}
+.App input[type=submit], .App button {
+  border: 2px solid #e63332;
+  padding: 0.3em;
+  background: white;
+  font-family: 'Founders Grotesk Condensed', sans-serif;
+  text-transform: uppercase;
+  margin: 0 1em 0 0;
+}
+.App input[type=submit]:hover, .App button:hover {
+  box-shadow: 2px 2px 4px 4px #aaa;
+}
+.App input[type=submit]:active, .App button:active {
+  box-shadow: 2px 2px inset #aaa;
+}
+.Question {
+  border-left: 4px solid #999;
+  padding-left: 1em;
+  margin-bottom: 2em;
+}
+.Question.correct {
+  border-color: rgb(0, 149, 90);
+}
+.Question.semicorrect {
+  border-color: rgb(253, 158, 40);
+}
+.Question.fail {
+  border-color: rgb(229, 11, 24);
+}
+.App code {
+  font-family: monospace;
+  font-size: smaller;
+  background: #ddd;
+  padding: 3px;
+  border-radius: 4px;
+  border: 1px solid #eee;
+}
+.Question p {
+  margin-bottom: 0;
+}
